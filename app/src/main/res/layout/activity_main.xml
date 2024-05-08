@@ -6,13 +6,97 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="219dp"
+        android:layout_height="263dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.194"
+        app:srcCompat="@drawable/cutie" />
 
+    <Button
+        android:id="@+id/BTNblink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#987371"
+        android:text="Blink"
+        app:layout_constraintBottom_toTopOf="@+id/BTNmove"
+        app:layout_constraintEnd_toStartOf="@+id/BTNrotate"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.602" />
+
+    <Button
+        android:id="@+id/BTNrotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#987371"
+        android:text="Rotate"
+        app:layout_constraintBottom_toTopOf="@+id/BTNslide"
+        app:layout_constraintEnd_toStartOf="@+id/BTNfade"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <Button
+        android:id="@+id/BTNfade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#987371"
+        android:text="Fade"
+        app:layout_constraintBottom_toTopOf="@+id/BTNzoom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <Button
+        android:id="@+id/BTNmove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="#987371"
+        android:text="Move"
+        app:layout_constraintBottom_toTopOf="@+id/BTNstop"
+        app:layout_constraintEnd_toStartOf="@+id/BTNslide"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/BTNslide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#987371"
+        android:text="Slide"
+        app:layout_constraintBottom_toTopOf="@+id/BTNstop"
+        app:layout_constraintEnd_toStartOf="@+id/BTNzoom" />
+
+    <Button
+        android:id="@+id/BTNzoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="#987371"
+        android:text="Zoom"
+        app:layout_constraintBottom_toTopOf="@+id/BTNstop"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/BTNstop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="112dp"
+        android:backgroundTint="#987371"
+        android:text="Stop Animation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
