@@ -1,4 +1,4 @@
-![slide](https://github.com/SmritiManikand/animation/assets/113674204/d404330d-a34e-42bd-a685-1c361823d76f)# Ex.No: 11 Develop a application to add animations to ImageView,Move,blink,fade,clockwise,zoom,slide operations are perform in android studio.
+# Ex.No: 11 Develop a application to add animations to ImageView,Move,blink,fade,clockwise,zoom,slide operations are perform in android studio.
 
 
 ## AIM:
@@ -312,6 +312,7 @@ public class MainActivity extends AppCompatActivity {
 
 ## OUTPUT
 
+<img width="202" alt="i1" src="https://github.com/SmritiManikand/animation/assets/113674204/5d6b479c-8d31-4c22-92f8-9cf805ada344">
 
 
 ## RESULT
